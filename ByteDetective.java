@@ -196,7 +196,7 @@ public class ByteDetective {
             int max = -1;
             int min = 256;
             int byteValue = 0;
-            double count = 0;
+            int count = 0;
 
             while ((byteValue = fis.read()) != -1) {
                 count++;
@@ -209,10 +209,11 @@ public class ByteDetective {
                 sum += byteValue;
 
             }
+            double countdouble = count;
             System.out.println("Total bytes: " + count);
             System.out.println("Min value: " + min);
             System.out.println("Max value: " + max);
-            System.out.println("Average: " + (sum/count));
+            System.out.println("Average: " + (sum/countdouble));
 
         } catch (FileNotFoundException e) {
             System.err.println("Error: File not found - " + MYSTERY_FILE);
