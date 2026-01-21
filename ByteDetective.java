@@ -209,11 +209,11 @@ public class ByteDetective {
                 sum += byteValue;
 
             }
-            double countdouble = count;
+            double countDouble = count;
             System.out.println("Total bytes: " + count);
             System.out.println("Min value: " + min);
             System.out.println("Max value: " + max);
-            System.out.println("Average: " + (sum/countdouble));
+            System.out.println("Average: " + (sum/countDouble));
 
         } catch (FileNotFoundException e) {
             System.err.println("Error: File not found - " + MYSTERY_FILE);
